@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CEF34932799D7E900080116 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF34922799D7E900080116 /* GreetingViewModel.swift */; };
+		8CEF34952799D9E300080116 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF34942799D9E300080116 /* Person.swift */; };
 		8CF53B5327994B82005CCF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF53B5227994B82005CCF19 /* AppDelegate.swift */; };
 		8CF53B5527994B82005CCF19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF53B5427994B82005CCF19 /* SceneDelegate.swift */; };
-		8CF53B5727994B82005CCF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF53B5627994B82005CCF19 /* ViewController.swift */; };
+		8CF53B5727994B82005CCF19 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF53B5627994B82005CCF19 /* GreetingViewController.swift */; };
 		8CF53B5C27994B84005CCF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF53B5B27994B84005CCF19 /* Assets.xcassets */; };
 		8CF53B5F27994B84005CCF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF53B5D27994B84005CCF19 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CEF34922799D7E900080116 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		8CEF34942799D9E300080116 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8CF53B4F27994B82005CCF19 /* MVVM_APP_ UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM_APP_ UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF53B5227994B82005CCF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CF53B5427994B82005CCF19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CF53B5627994B82005CCF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CF53B5627994B82005CCF19 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		8CF53B5B27994B84005CCF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF53B5E27994B84005CCF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF53B6027994B84005CCF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CEF34912799D6A300080116 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8CF53B5227994B82005CCF19 /* AppDelegate.swift */,
+				8CF53B5427994B82005CCF19 /* SceneDelegate.swift */,
+				8CF53B5B27994B84005CCF19 /* Assets.xcassets */,
+				8CF53B5D27994B84005CCF19 /* LaunchScreen.storyboard */,
+				8CF53B6027994B84005CCF19 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		8CF53B4627994B82005CCF19 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +70,10 @@
 		8CF53B5127994B82005CCF19 /* MVVM_APP_ UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8CF53B5227994B82005CCF19 /* AppDelegate.swift */,
-				8CF53B5427994B82005CCF19 /* SceneDelegate.swift */,
-				8CF53B5627994B82005CCF19 /* ViewController.swift */,
-				8CF53B5B27994B84005CCF19 /* Assets.xcassets */,
-				8CF53B5D27994B84005CCF19 /* LaunchScreen.storyboard */,
-				8CF53B6027994B84005CCF19 /* Info.plist */,
+				8CEF34912799D6A300080116 /* Support */,
+				8CEF34922799D7E900080116 /* GreetingViewModel.swift */,
+				8CF53B5627994B82005CCF19 /* GreetingViewController.swift */,
+				8CEF34942799D9E300080116 /* Person.swift */,
 			);
 			path = "MVVM_APP_ UIKit";
 			sourceTree = "<group>";
@@ -134,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF53B5727994B82005CCF19 /* ViewController.swift in Sources */,
+				8CEF34952799D9E300080116 /* Person.swift in Sources */,
+				8CF53B5727994B82005CCF19 /* GreetingViewController.swift in Sources */,
 				8CF53B5327994B82005CCF19 /* AppDelegate.swift in Sources */,
 				8CF53B5527994B82005CCF19 /* SceneDelegate.swift in Sources */,
+				8CEF34932799D7E900080116 /* GreetingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +295,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F824GPAVR5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM_APP_ UIKit/Info.plist";
+				INFOPLIST_FILE = "MVVM_APP_ UIKit/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -307,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F824GPAVR5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM_APP_ UIKit/Info.plist";
+				INFOPLIST_FILE = "MVVM_APP_ UIKit/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
