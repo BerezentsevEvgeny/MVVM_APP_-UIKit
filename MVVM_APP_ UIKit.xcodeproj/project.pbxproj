@@ -71,9 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				8CEF34912799D6A300080116 /* Support */,
+				8CEF34942799D9E300080116 /* Person.swift */,
 				8CEF34922799D7E900080116 /* GreetingViewModel.swift */,
 				8CF53B5627994B82005CCF19 /* GreetingViewController.swift */,
-				8CEF34942799D9E300080116 /* Person.swift */,
 			);
 			path = "MVVM_APP_ UIKit";
 			sourceTree = "<group>";

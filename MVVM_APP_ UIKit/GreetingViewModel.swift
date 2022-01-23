@@ -5,30 +5,30 @@
 //  Created by Евгений Березенцев on 20.01.2022.
 //
 
-import Foundation
+//import Foundation
 
 protocol GreetingViewModelProtocol {
     var greeting: String? { get }
-    var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set }
+    var greetingDidChange: ((GreetingViewModelProtocol) -> Void)? { get set }
     init(person: Person)
     func showGreeting()
 }
 
 class GreetingViewModel: GreetingViewModelProtocol {
 
-    let person: Person!
-    
     var greeting: String? {
         didSet {
             greetingDidChange?(self)
         }
     }
     
-    var greetingDidChange: ((GreetingViewModelProtocol) -> ())?
+    var greetingDidChange: ((GreetingViewModelProtocol) -> Void)?
     
     required init(person: Person) {
         self.person = person
     }
+    
+    let person: Person!
     
     func showGreeting() {
         greeting = "Hello" + " " + person.name + " " + person.surname
