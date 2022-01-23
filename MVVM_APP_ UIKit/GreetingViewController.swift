@@ -58,7 +58,6 @@ class GreetingViewController: UIViewController {
             greetingLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
             greetingLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
             greetingLabel.bottomAnchor.constraint(equalTo: setGreetingButton.topAnchor, constant: -150),
-            
         ])
     }
     
