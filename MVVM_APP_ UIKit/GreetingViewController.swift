@@ -23,8 +23,7 @@ class GreetingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let person = Person(name: "Tim", surname: "Cook")
-        viewModel = GreetingViewModel(person: person)
+        viewModel = GreetingViewModel()
         addSubviews()
         setConstraints()
     }
@@ -64,10 +63,6 @@ class GreetingViewController: UIViewController {
     @objc func buttonTapped() {
         viewModel.showGreeting()
     }
-    
-    
-    
-    
     
 }
 

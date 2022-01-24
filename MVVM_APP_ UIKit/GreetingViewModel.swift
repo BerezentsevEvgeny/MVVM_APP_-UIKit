@@ -10,11 +10,15 @@
 protocol GreetingViewModelProtocol {
     var greeting: String? { get }
     var greetingDidChange: ((GreetingViewModelProtocol) -> Void)? { get set }
-    init(person: Person)
+    var person: Person { get }
     func showGreeting()
 }
 
 class GreetingViewModel: GreetingViewModelProtocol {
+    var person: Person {
+        Person(name: "Tim", surname: "Cook")
+    }
+    
 
     var greeting: String? {
         didSet {
@@ -24,11 +28,6 @@ class GreetingViewModel: GreetingViewModelProtocol {
     
     var greetingDidChange: ((GreetingViewModelProtocol) -> Void)?
     
-    required init(person: Person) {
-        self.person = person
-    }
-    
-    let person: Person!
     
     func showGreeting() {
         greeting = "Hello" + " " + person.name + " " + person.surname
