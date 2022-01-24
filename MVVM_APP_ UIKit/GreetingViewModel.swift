@@ -19,7 +19,6 @@ class GreetingViewModel: GreetingViewModelProtocol {
         Person(name: "Tim", surname: "Cook")
     }
     
-
     var greeting: String? {
         didSet {
             greetingDidChange?(self)
@@ -28,9 +27,7 @@ class GreetingViewModel: GreetingViewModelProtocol {
     
     var greetingDidChange: ((GreetingViewModelProtocol) -> Void)?
     
-    
     func showGreeting() {
         greeting = "Hello" + " " + person.name + " " + person.surname
     }
-    
 }
